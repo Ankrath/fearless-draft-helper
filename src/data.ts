@@ -1,14 +1,22 @@
 const CURRENT_PATCH = '14.24.1';
 
 export const getChampionImageUrl = (championName: string) => {
-  if (championName === 'Wukong') {
-    return `http://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/MonkeyKing.png`;
+  const specialCases: Record<string, string> = {
+    Wukong: 'MonkeyKing',
+    "Kog'Maw": 'KogMaw',
+    "K'Sante": 'KSante',
+    "Rek'Sai": 'RekSai',
+  };
+
+  if (specialCases[championName]) {
+    return `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${specialCases[championName]}.png`;
   }
 
-  return `http://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${championName.replace(
-    /\s+/g,
-    '',
-  )}.png`;
+  const formattedName = championName
+    .replace(/\s+/g, '')
+    .replace(/[']\w/g, match => match[1].toLowerCase());
+
+  return `https://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${formattedName}.png`;
 };
 
 export const champions = [
@@ -89,7 +97,7 @@ export const champions = [
   },
   {
     id: 14,
-    name: 'Belveth',
+    name: "Bel'Veth",
     roles: ['jungle'],
   },
   {
@@ -129,7 +137,7 @@ export const champions = [
   },
   {
     id: 22,
-    name: 'Chogath',
+    name: "Cho'Gath",
     roles: ['top'],
   },
   {
@@ -289,7 +297,7 @@ export const champions = [
   },
   {
     id: 54,
-    name: 'Kaisa',
+    name: "Kai'Sa",
     roles: ['adc'],
   },
   {
@@ -334,7 +342,7 @@ export const champions = [
   },
   {
     id: 63,
-    name: 'Khazix',
+    name: "Kha'Zix",
     roles: ['jungle'],
   },
   {
@@ -349,12 +357,12 @@ export const champions = [
   },
   {
     id: 66,
-    name: 'KogMaw',
+    name: "Kog'Maw",
     roles: ['adc'],
   },
   {
     id: 67,
-    name: 'KSante',
+    name: "K'Sante",
     roles: ['top'],
   },
   {
@@ -534,7 +542,7 @@ export const champions = [
   },
   {
     id: 103,
-    name: 'RekSai',
+    name: "Rek'Sai",
     roles: ['jungle'],
   },
   {
@@ -744,7 +752,7 @@ export const champions = [
   },
   {
     id: 144,
-    name: 'Velkoz',
+    name: "Vel'Koz",
     roles: ['mid', 'support'],
   },
   {
