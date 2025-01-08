@@ -1,7 +1,15 @@
-const CURRENT_PATCH = '14.1.1';
+const CURRENT_PATCH = '14.24.1';
 
-export const getChampionImageUrl = (championName: string) =>
-  `http://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${championName}.png`;
+export const getChampionImageUrl = (championName: string) => {
+  if (championName === 'Wukong') {
+    return `http://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/MonkeyKing.png`;
+  }
+
+  return `http://ddragon.leagueoflegends.com/cdn/${CURRENT_PATCH}/img/champion/${championName.replace(
+    /\s+/g,
+    '',
+  )}.png`;
+};
 
 export const champions = [
   {
@@ -30,6 +38,11 @@ export const champions = [
     roles: ['support'],
   },
   {
+    id: 169,
+    name: 'Ambessa',
+    roles: ['top'],
+  },
+  {
     id: 6,
     name: 'Amumu',
     roles: ['jungle', 'support'],
@@ -56,8 +69,13 @@ export const champions = [
   },
   {
     id: 11,
-    name: 'AurelionSol',
+    name: 'Aurelion Sol',
     roles: ['mid'],
+  },
+  {
+    id: 168,
+    name: 'Aurora',
+    roles: ['top', 'mid'],
   },
   {
     id: 12,
@@ -136,7 +154,7 @@ export const champions = [
   },
   {
     id: 27,
-    name: 'DrMundo',
+    name: 'Dr Mundo',
     roles: ['top', 'jungle'],
   },
   {
@@ -396,7 +414,7 @@ export const champions = [
   },
   {
     id: 79,
-    name: 'MasterYi',
+    name: 'Master Yi',
     roles: ['jungle'],
   },
   {
@@ -406,7 +424,7 @@ export const champions = [
   },
   {
     id: 81,
-    name: 'MissFortune',
+    name: 'Miss Fortune',
     roles: ['adc'],
   },
   {
@@ -615,6 +633,11 @@ export const champions = [
     roles: ['jungle'],
   },
   {
+    id: 167,
+    name: 'Smolder',
+    roles: ['adc'],
+  },
+  {
     id: 123,
     name: 'Sona',
     roles: ['support'],
@@ -641,7 +664,7 @@ export const champions = [
   },
   {
     id: 128,
-    name: 'TahmKench',
+    name: 'Tahm Kench',
     roles: ['support', 'top'],
   },
   {
@@ -686,7 +709,7 @@ export const champions = [
   },
   {
     id: 137,
-    name: 'TwistedFate',
+    name: 'Twisted Fate',
     roles: ['mid'],
   },
   {
