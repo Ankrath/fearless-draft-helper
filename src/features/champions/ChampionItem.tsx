@@ -13,18 +13,14 @@ const ChampionItem = ({ champion }: ChampionItemProps) => {
   return (
     <div className='flex flex-col items-center gap-1'>
       <div className='relative w-16 h-16 md:w-24 md:h-24'>
-        {/* Skeleton placeholder */}
-        <div
-          className={`absolute inset-0 bg-gray-600 rounded-lg transition-opacity duration-200 ${
-            isLoading ? 'opacity-100' : 'opacity-0'
-          }`}
-        />
+        {isLoading && (
+          <div className='absolute inset-0 bg-gray-600 rounded-lg animate-pulse' />
+        )}
 
-        {/* Champion image */}
         <img
           src={getChampionImageUrl(champion.name)}
           alt={champion.name}
-          className={`w-full h-full rounded-lg transition-opacity duration-200 ${
+          className={`w-full h-full rounded-lg transition-opacity duration-200 cursor-pointer ${
             isLoading ? 'opacity-0' : 'opacity-100'
           }`}
           onLoad={() => setIsLoading(false)}
