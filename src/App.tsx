@@ -1,8 +1,14 @@
+import Header from './components/Header';
+import Main from './pages/Main';
+
 const App = () => {
   return (
-    <div>
-      <h1 className='text-3xl font-bold underline'>Initial setup</h1>
-    </div>
+    <>
+      <Header />
+      <div className='flex justify-center'>
+        <Main />
+      </div>
+    </>
   );
 };
 
