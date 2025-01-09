@@ -53,7 +53,7 @@ export const champions = [
   {
     id: 6,
     name: 'Amumu',
-    roles: ['jungle', 'support'],
+    roles: ['jungle'],
   },
   {
     id: 7,
@@ -63,7 +63,7 @@ export const champions = [
   {
     id: 8,
     name: 'Annie',
-    roles: ['mid', 'support'],
+    roles: ['mid'],
   },
   {
     id: 9,
@@ -143,7 +143,7 @@ export const champions = [
   {
     id: 23,
     name: 'Corki',
-    roles: ['mid'],
+    roles: ['mid', 'adc'],
   },
   {
     id: 24,
@@ -203,7 +203,7 @@ export const champions = [
   {
     id: 35,
     name: 'Galio',
-    roles: ['mid', 'support'],
+    roles: ['mid'],
   },
   {
     id: 36,
@@ -248,7 +248,7 @@ export const champions = [
   {
     id: 44,
     name: 'Hwei',
-    roles: ['mid', 'support'],
+    roles: ['mid'],
   },
   {
     id: 45,
@@ -418,7 +418,7 @@ export const champions = [
   {
     id: 78,
     name: 'Maokai',
-    roles: ['support', 'top'],
+    roles: ['support', 'top', 'jungle'],
   },
   {
     id: 79,
@@ -448,7 +448,7 @@ export const champions = [
   {
     id: 84,
     name: 'Naafiri',
-    roles: ['mid'],
+    roles: ['jungle'],
   },
   {
     id: 85,
@@ -513,7 +513,7 @@ export const champions = [
   {
     id: 97,
     name: 'Poppy',
-    roles: ['top', 'jungle'],
+    roles: ['top', 'jungle', 'support'],
   },
   {
     id: 98,
@@ -523,7 +523,7 @@ export const champions = [
   {
     id: 99,
     name: 'Qiyana',
-    roles: ['mid'],
+    roles: ['mid', 'jungle'],
   },
   {
     id: 100,
@@ -683,7 +683,7 @@ export const champions = [
   {
     id: 130,
     name: 'Talon',
-    roles: ['mid'],
+    roles: ['mid', 'jungle'],
   },
   {
     id: 131,
@@ -853,7 +853,7 @@ export const champions = [
   {
     id: 164,
     name: 'Zilean',
-    roles: ['support'],
+    roles: ['support', 'mid'],
   },
   {
     id: 165,
