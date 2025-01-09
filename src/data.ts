@@ -243,7 +243,7 @@ export const champions = [
   {
     id: 43,
     name: 'Heimerdinger',
-    roles: ['mid', 'support'],
+    roles: ['mid', 'top'],
   },
   {
     id: 44,
