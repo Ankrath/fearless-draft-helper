@@ -83,7 +83,7 @@ export const champions = [
   {
     id: 168,
     name: 'Aurora',
-    roles: ['top', 'mid'],
+    roles: ['top', 'mid', 'adc'],
   },
   {
     id: 12,
@@ -108,7 +108,7 @@ export const champions = [
   {
     id: 16,
     name: 'Brand',
-    roles: ['support', 'mid'],
+    roles: ['support', 'mid', 'adc'],
   },
   {
     id: 17,
@@ -233,7 +233,7 @@ export const champions = [
   {
     id: 41,
     name: 'Gwen',
-    roles: ['top'],
+    roles: ['top', 'jungle'],
   },
   {
     id: 42,
@@ -248,7 +248,7 @@ export const champions = [
   {
     id: 44,
     name: 'Hwei',
-    roles: ['mid'],
+    roles: ['mid', 'adc'],
   },
   {
     id: 45,
@@ -313,7 +313,7 @@ export const champions = [
   {
     id: 57,
     name: 'Karthus',
-    roles: ['jungle'],
+    roles: ['jungle', 'adc'],
   },
   {
     id: 58,
@@ -403,7 +403,7 @@ export const champions = [
   {
     id: 75,
     name: 'Lux',
-    roles: ['support', 'mid'],
+    roles: ['support', 'mid', 'adc'],
   },
   {
     id: 76,
@@ -593,12 +593,12 @@ export const champions = [
   {
     id: 113,
     name: 'Senna',
-    roles: ['support'],
+    roles: ['support', 'adc'],
   },
   {
     id: 114,
     name: 'Seraphine',
-    roles: ['support', 'mid'],
+    roles: ['support', 'mid', 'adc'],
   },
   {
     id: 115,
@@ -658,7 +658,7 @@ export const champions = [
   {
     id: 125,
     name: 'Swain',
-    roles: ['mid', 'support'],
+    roles: ['mid', 'support', 'adc'],
   },
   {
     id: 126,
@@ -668,7 +668,7 @@ export const champions = [
   {
     id: 127,
     name: 'Syndra',
-    roles: ['mid'],
+    roles: ['mid', 'adc'],
   },
   {
     id: 128,
@@ -748,7 +748,7 @@ export const champions = [
   {
     id: 143,
     name: 'Veigar',
-    roles: ['mid'],
+    roles: ['mid', 'adc'],
   },
   {
     id: 144,
@@ -773,7 +773,7 @@ export const champions = [
   {
     id: 148,
     name: 'Viktor',
-    roles: ['mid'],
+    roles: ['mid', 'adc'],
   },
   {
     id: 149,
@@ -813,7 +813,7 @@ export const champions = [
   {
     id: 156,
     name: 'Yasuo',
-    roles: ['mid'],
+    roles: ['mid', 'yasuo'],
   },
   {
     id: 157,
